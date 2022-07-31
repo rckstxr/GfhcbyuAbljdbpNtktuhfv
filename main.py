@@ -56,7 +56,7 @@ async def dump_all_messages(channel):
         print(messages)
         print(all_messages)
 
-    with open('cybersquatt_messages.json', 'w', encoding='utf8') as outfile:
+    with open('channel_messages.json', 'w', encoding='utf8') as outfile:
         json.dump(all_messages, outfile, ensure_ascii=False, cls=DateTimeEncoder)
 
 async def main():
